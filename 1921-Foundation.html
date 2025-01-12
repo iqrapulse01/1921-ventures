@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>1921-Foundation</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .wrapper {
+            background-image: url("images/herearesomepossiblebackgrounds/ebd8f14c-ac7b-499f-97c3-9cff71640364.jpg");
+        }
+
+        .container1 {
+            padding: 20px 10% 0px 10%;
+        }
+
+        /* Main Heading */
+        .main-heading {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-top: 80px;
+            color: white;
+            text-shadow: 0 0 5px rgb(74, 201, 69), 0 0 10px rgb(245, 241, 241);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #d8d8d8;
+            text-align: center;
+            /* font-style: italic; */
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(56, 182, 30, 0.6);
+        }
+
+        .para {
+            margin-bottom: 15px;
+            margin-top: 45px;
+            font-family: sans-serif;
+            text-shadow: 0 0 5px rgb(15, 63, 1), 0 0 10px rgb(252, 251, 251);
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        /* Two columns layout */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .right-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .box {
+            background: linear-gradient(rgba(30, 230, 57, 0.5), #0a0a0a);
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(253, 252, 252, 0.2), 0 5px 15px rgba(252, 251, 251, 0.15);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .box h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fcf7f7;
+            text-shadow: 0 0 3px rgba(248, 247, 247, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .donate {
+            margin-top: 40px;
+        }
+
+        .box li {
+            font-size: .9rem;
+            padding-top: 5px;
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 10px 20%;
+            font-size: 1rem;
+            font-weight: 600;
+            background: linear-gradient(rgba(30, 230, 57, 0.5), #5e5e5e);
+            color: rgb(252, 249, 249);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0);
+        }
+
+        .cta-button:hover {
+            cursor: pointer;
+            color: rgb(1, 78, 1);
+            background: linear-gradient(rgb(1, 78, 1), #808080);
+            text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 900px) {
+            .box .righttext {
+                padding: 0px 30px !important;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .box .righttext {
+                padding: 0px 15px !important;
+
+            }
+
+            .box .alignlft {
+                text-align: left;
+                padding: 0px 10px !important;
+                line-height: 18px;
+                font-size: 15px;
+
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .main-heading {
+                font-size: 1.4rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            .content-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .donate {
+                margin-top: 20px;
+            }
+
+            .box {
+                margin-bottom: 5px;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .cta-button {
+                margin-bottom: 5px;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+
+            .cta-button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header  -->
+        <nav>
+            <a href="/index.html"><img src="images/Final 1921 Ventures.png" width="90px" alt=""></a>
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggler" name="">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/about.html"> About 1921 Ventures</a></li>
+                    <li><a href="/1921-Digital.html">Explore 1921 Digital</a></li>
+                    <li><a href="/1921-Foundation.html"> Support the 1921 Foundation</a></li>
+                    <li><a href="/Why-1921.html"> Why 1921 Ventures</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header  -->
+        <div class="container1">
+            <!-- Add tagline here -->
+            <div class="main-heading">Empowering Communities, Inspiring Change</div>
+            <p class="tagline">The 1921 Foundation serves as the philanthropic arm of 1921 Ventures, rooted in the
+                belief that true success is measured by the positive impact we create. By channeling resources into
+                underserved communities, the Foundation fosters resilience, education, and entrepreneurship.</p>
+            <div class="content-wrapper">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="box ">
+                        <div class="para">Key Focus Areas:</div>
+                        <ol>
+                            <li>
+                                <h3>Education:</h3>
+                            </li>
+                            <ul>
+                                <li>Scholarships for underserved students pursuing careers in technology, business, and
+                                    the arts.</li>
+                                <li>Workshops and mentorship programs to prepare the next generation of leaders.</li>
+                            </ul>
+                            <li>
+                                <h3>Entrepreneurship:</h3>
+                            </li>
+                            <ul>
+                                <li>Grants for small businesses and startups, especially those owned by marginalized
+                                    groups.</li>
+                                <li>Funding for incubators and accelerators in urban communities.</li>
+                            </ul>
+                            <li>
+                                <h3>Community Development:</h3>
+                            </li>
+                            <ul>
+                                <li>Support for urban revitalization projects, including affordable housing and business
+                                    district redevelopment.</li>
+                                <li>Partnerships with local organizations to address social and economic challenges.
+                                </li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="box">
+                        <div class="para">Ongoing Initiatives:</div>
+                        <ul>
+                            <li>
+                                <h3>The Legacy Scholarship Program</h3>
+                            </li>
+                            <ul>
+                                <li> Annual scholarships for students committed to uplifting their communities.</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h3>Empowerment Grant Series</h3>
+                            </li>
+                            <ul>
+                                <li> Microgrants for community-driven initiatives and startups.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <a href="https://1921bc.com/">
+                        <button class="cta-button donate">Donate to the 1921 Foundation</button>
+                    </a>
+                    <a href="https://1921bc.com/">
+                        <button class="cta-button">Learn About Current Projects</button>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <p>© 2025 1921 Ventures. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

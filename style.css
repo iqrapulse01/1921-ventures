@@ -33,7 +33,7 @@ body {
 .container {
   text-align: center;
   justify-content: center;
-  background-image: url("images/herearesomepossiblebackgrounds/88d6ab5e-0de3-4a35-80e8-122195f304c1.jpg");
+  /* background-image: url("images/herearesomepossiblebackgrounds/88d6ab5e-0de3-4a35-80e8-122195f304c1.jpg"); */
 }
 
 /* nav */
@@ -184,8 +184,8 @@ label i {
   position: absolute;
   width: 0px;
   opacity: 0.75;
-  background-color: white;
-  box-shadow: #e9f1f1 0px 0px 20px 2px;
+  background-color: rgb(7, 133, 18);
+  box-shadow: #44a304 0px 0px 20px 2px;
   opacity: 0;
   top: 100vh;
   bottom: 0px;
